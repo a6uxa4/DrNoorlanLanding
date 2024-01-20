@@ -19,7 +19,7 @@ function Home() {
       <ServicesPage />
       <AboutClinicPage />
       <AdvantagesPage />
-      
+      <PersonalPage />
       <AboutPage />
       <WorkPage />
       <FeedbackPage />

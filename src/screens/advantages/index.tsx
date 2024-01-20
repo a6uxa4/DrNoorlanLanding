@@ -6,7 +6,7 @@ import Marquee from "react-fast-marquee";
 
 export const AdvantagesPage = () => {
   return (
-    <div className="w-[100vw] bg-[#EEF9F9] relative flex justify-center items-start py-10 sm:py-5">
+    <div className="w-[100vw] bg-[#eef9f9] relative flex justify-center items-start py-10 sm:py-5">
       <div className="flex flex-col gap-2">
         <div className="py-5 w-full flex items-center justify-center">
           <h1 className="text-[30px] font-bold font-mono lg:text-[20px] sm:text-[16px]">

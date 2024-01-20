@@ -16,21 +16,21 @@ export default function App({ Component, pageProps }: AppProps) {
         <ActiveSectionContextProvider>
           <Natification>
             <Head>
-              <title>Estetic Clinic - современная стоматология в Бишкеке</title>
+              <title>Dr Noorlan - современная стоматология в Бишкеке</title>
               <meta
                 name="viewport"
                 content="width=device-width, initial-scale=1"
               />
               <meta
                 name="description"
-                content="Стоматологическая клиника Estetic Clinic предлагает все виды 
+                content="Стоматологическая клиника Dr Noorlan предлагает все виды 
                 стоматологических услуг - лечение, протезирование, имплантация и др. 
                 Квалифицированные врачи, современное оборудование, гарантия качества. 
                 Запишитесь на прием онлайн"
               />
               <meta
                 name="keywords"
-                content="Estetic Clinic Бишкек, стоматолог Бишкек,
+                content="Dr Noorlan Бишкек, стоматолог Бишкек,
                 эстетик клиник, клиника эстетик,veneers clinic,
                 dental clinic, эстетик клиник бишкек
                 стоматология Бишкек, стоматология Кыргызстан

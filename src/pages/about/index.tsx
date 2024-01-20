@@ -10,13 +10,12 @@ const AboutPage: NextPage = () => {
   return (
     <div className="w-[100vw] h-full flex lg:flex-col lg:items-center lg:mb-14">
       <Head>
-        <title>Estetic Clinic - О нас</title>
+        <title>Dr Noorlan - О нас</title>
       </Head>
       <div className="w-[50%] h-full flex flex-col gap-10 p-10 lg:w-full md:text-[14px] md:gap-5">
         <span>
-          Estetic Clinic - это современная стоматологическая клиника,
-          предлагающая высококачественные услуги в уютной и спокойной
-          обстановке.
+          Dr Noorlan - это современная стоматологическая клиника, предлагающая
+          высококачественные услуги в уютной и спокойной обстановке.
         </span>
         <span>
           В нашей клинике Вы сможете сделать панорамный снимок зубов на новейшем
@@ -36,7 +35,7 @@ const AboutPage: NextPage = () => {
           доверительную атмосферу.
         </span>
         <span>
-          Estetic Clinic- место, где улыбка станет ярче. Доверьте свое улучшение
+          Dr Noorlan - место, где улыбка станет ярче. Доверьте свое улучшение
           здоровью и красоте нашей опытной команде, и мы с радостью сделаем вашу
           улыбку самой лучшей версией себя!
         </span>

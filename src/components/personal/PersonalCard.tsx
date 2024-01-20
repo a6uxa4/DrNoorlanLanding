@@ -4,7 +4,7 @@ export const PersonalCard = ({ personal }: any) => {
   return (
     <div className="group w-[300px] h-[400px] relative flex flex-col items-start justify-between cursor-pointer m-2.5 min-w-[300px] max-w-[300px] min-h-[400px] max-h-[400px] md:max-w-[250px] md:min-w-[250px] md:min-h-[350px] md:max-h-[350px] md:w-[250px] md:h-[350px]">
       <div className="w-full h-full flex items-end justify-center">
-        <div className="w-[250px] h-[120px] bg-[#EEF9F9] group-hover:bg-[#00d6d4] duration-500 rounded-xl absolute z-[2]"></div>
+        <div className="w-[250px] h-[120px] bg-[#eef9f9] group-hover:bg-[#00d6d4] duration-500 rounded-xl absolute z-[2]"></div>
         <Image
           src={personal.photo}
           alt="personal"

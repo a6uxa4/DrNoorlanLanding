@@ -70,7 +70,7 @@ const SwitchContact = () => {
         />
       </motion.a>
       <motion.a
-        href="https://www.instagram.com/estetic_clinik/"
+        href="https://www.instagram.com/dr.noorlan_dental/"
         target="_blank"
         whileHover={{ scale: 1.2 }}
         initial={{

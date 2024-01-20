@@ -37,7 +37,7 @@ export const AboutPage = () => {
   };
 
   return (
-    <div className="w-[100vw] bg-[#EEF9F9] relative flex justify-center items-start py-10 sm:py-5 text-center">
+    <div className="w-[100vw] bg-[#eef9f9] relative flex justify-center items-start py-10 sm:py-5 text-center">
       <div className="w-full flex flex-col items-center justify-between gap-2 max-w-[1440px]">
         <div className="py-5 w-full flex items-center justify-center max-w-[400px]">
           <h1 className="text-lg font-bold font-mono lg:text-[20px] sm:text-[14px]">
