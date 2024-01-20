@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  frontend:
+    image: estetic-dev
+    container_name: frontend
+    ports:
+      - 8080:80
