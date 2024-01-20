@@ -10,9 +10,9 @@ export const ServicesCard = ({
     <div
       onMouseEnter={() => setActiveService(service.id)}
       className={clsx(
-        "group w-fit flex flex-col relative pb-8 gap-5 items-center justify-center rounded-xl cursor-pointer hover:bg-[#01d6d4] duration-500",
+        "group w-fit flex flex-col relative pb-8 gap-5 items-center justify-center rounded-xl cursor-pointer hover:bg-[#545454] duration-500",
         {
-          "bg-[#01d6d4]": activeService === service.id,
+          "bg-[#545454]": activeService === service.id,
         }
       )}
     >
