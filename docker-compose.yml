@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   frontend:
-    image: estetic-dev
+    image: noorlan-dev
     container_name: frontend
     ports:
       - 8080:80

@@ -3,7 +3,7 @@ version: 2.1
 parameters:
   docker-container:
     type: string
-    default: "estetic-dev"
+    default: "noorlan-dev"
     description: Docker 8'
 
 jobs:
@@ -46,7 +46,7 @@ jobs:
       - run:
           name: Stop Remote Docker-Compose
           command: |
-            ssh -o "StrictHostKeyChecking=no" -i ./privateKey.pem circleci@$HOST '
+            ssh -o "StrictHostKeyChecking=no" -i ./privateKey.pem circleci@$HOSTold '
             if [ -f docker-compose.yml ]; then
             sudo docker-compose down --rmi all
             sudo rm docker-compose.yml
