@@ -121,6 +121,8 @@ export const AppointmentsPage = () => {
                 <a
                   href="https://www.instagram.com/dr.noorlan_dental/"
                   className="cursor-pointer"
+                  aria-label="Our instagram"
+                  target="_blank"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -155,6 +157,8 @@ export const AppointmentsPage = () => {
                 <a
                   className="cursor-pointer"
                   href="https://wa.me/+996999898868"
+                  aria-label="Our whatsapp"
+                  target="_blank"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
