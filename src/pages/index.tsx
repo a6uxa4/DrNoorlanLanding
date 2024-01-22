@@ -17,9 +17,9 @@ function Home() {
     <>
       <BannerPage />
       <ServicesPage />
+      <AdvantagesPage />
       <AboutClinicPage />
-      {/* <AdvantagesPage />
-      <PersonalPage />
+      {/* <PersonalPage />
       <AboutPage />
       <WorkPage />
       <FeedbackPage />

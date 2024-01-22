@@ -17,7 +17,7 @@ export const ServicesPage = () => {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.05 * index - 1,
+        delay: 0.05 * index,
       },
     }),
   };
