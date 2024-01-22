@@ -5,8 +5,13 @@ import { ADVANTAGES } from "@/utils/constants/advantages.constant";
 
 export const AdvantagesPage = () => {
   return (
-    <div className="w-[100vw] bg-[#fafafa] relative flex justify-center items-start py-10 sm:py-5">
-      <div className="w-full max-w-[1440px] grid place-items-center grid-rows-2 grid-cols-3 gap-y-10">
+    <div className="w-[100vw] bg-[#fafafa] relative flex flex-col justify-center items-start py-10 sm:py-5">
+      <div className="py-5 w-full flex items-center justify-center">
+        <h1 className="text-[30px] font-bold font-mono lg:text-[20px] sm:text-[16px]">
+          Почему нас выбирают
+        </h1>
+      </div>
+      <div className="w-full max-w-[1440px] grid place-items-center grid-rows-2 grid-cols-3 gap-y-10 m-auto">
         {ADVANTAGES.map((item) => (
           <div
             key={item.id}

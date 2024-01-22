@@ -18,10 +18,10 @@ function Home() {
       <BannerPage />
       <ServicesPage />
       <AdvantagesPage />
-      <AboutClinicPage />
-      {/* <PersonalPage />
-      <AboutPage />
       <WorkPage />
+      {/* <PersonalPage />
+      <AboutClinicPage />
+      <AboutPage />
       <FeedbackPage />
       <AppointmentsPage />
       <SwitchContact /> */}

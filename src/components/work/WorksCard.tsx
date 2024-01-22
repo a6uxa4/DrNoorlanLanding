@@ -10,13 +10,13 @@ export const WorksCard = ({ works }: any) => {
           alt="beforeImage"
           className="md:w-[200px]"
         />
-        <div className="w-[65px] h-[65px] lg:w-[50px] lg:h-[50px] md:w-[40px] md:h-[40px] lg:text-[12px] bg-[#00d6d5] rounded-full absolute left-[40%] bottom-[-30px] text-white flex items-center justify-center font-semibold">
+        <div className="w-[65px] h-[65px] lg:w-[50px] lg:h-[50px] md:w-[40px] md:h-[40px] lg:text-[12px] bg-[#ff5955] rounded-full absolute left-[40%] bottom-[-30px] text-white flex items-center justify-center font-semibold">
           До
         </div>
       </div>
       <div className="md:rotate-90">
         <svg
-          fill="#00d6d4"
+          fill="#ff5955"
           viewBox="0 0 24 24"
           height="40px"
           width="40px"
@@ -31,7 +31,7 @@ export const WorksCard = ({ works }: any) => {
           alt="afterImage"
           className="md:w-[200px]"
         />
-        <div className="w-[65px] h-[65px] lg:w-[50px] lg:h-[50px] md:w-[40px] md:h-[40px] lg:text-[12px] bg-[#00d6d5] rounded-full absolute left-[40%] bottom-[-30px] text-white flex items-center justify-center font-semibold">
+        <div className="w-[65px] h-[65px] lg:w-[50px] lg:h-[50px] md:w-[40px] md:h-[40px] lg:text-[12px] bg-[#ff5955] rounded-full absolute left-[40%] bottom-[-30px] text-white flex items-center justify-center font-semibold">
           После
         </div>
       </div>
