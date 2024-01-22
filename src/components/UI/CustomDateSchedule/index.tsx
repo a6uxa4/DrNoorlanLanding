@@ -109,7 +109,7 @@ export const DatePicker = ({
                 <span
                   onClick={() => handleChangeTime(item.startTime)}
                   key={item.startTime}
-                  className="bg-[#eff8f9] px-2 py-1 rounded-md w-full flex items-center justify-center hover:bg-[#00d6d4] hover:text-white cursor-pointer"
+                  className="bg-[#eff8f9] px-2 py-1 rounded-md w-full flex items-center justify-center hover:bg-[#ff5955] hover:text-white cursor-pointer"
                 >
                   {item.startTime}
                 </span>
