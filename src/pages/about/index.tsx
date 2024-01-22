@@ -2,7 +2,6 @@
 
 import { NextPage } from "next";
 import Image from "next/image";
-import PhotoAbout from "../../assets/images/About.jpg";
 import { withLayout } from "@/Layout";
 import Head from "next/head";
 
@@ -40,13 +39,13 @@ const AboutPage: NextPage = () => {
           улыбку самой лучшей версией себя!
         </span>
       </div>
-      <div className="w-[50%] h-full flex items-center justify-center lg:w-full lg:p-10">
+      {/* <div className="w-[50%] h-full flex items-center justify-center lg:w-full lg:p-10">
         <Image
           className="w-[500px] h-[500px] rounded-[24px] lg:w-full md:h-[300px]"
           src={PhotoAbout}
           alt="about"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
