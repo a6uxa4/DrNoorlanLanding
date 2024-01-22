@@ -18,13 +18,13 @@ function Home() {
       <BannerPage />
       <ServicesPage />
       <AboutClinicPage />
-      <AdvantagesPage />
+      {/* <AdvantagesPage />
       <PersonalPage />
       <AboutPage />
       <WorkPage />
       <FeedbackPage />
       <AppointmentsPage />
-      <SwitchContact />
+      <SwitchContact /> */}
     </>
   );
 }
