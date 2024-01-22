@@ -8,7 +8,10 @@ export const AdvantagesPage = () => {
     <div className="w-[100vw] bg-[#fafafa] relative flex justify-center items-start py-10 sm:py-5">
       <div className="w-full max-w-[1440px] grid place-items-center grid-rows-2 grid-cols-3 gap-y-10">
         {ADVANTAGES.map((item) => (
-          <div className="flex flex-col items-start justify-center gap-5 w-[310px] h-fit">
+          <div
+            key={item.id}
+            className="flex flex-col items-start justify-center gap-5 w-[310px] h-fit"
+          >
             <div className="flex items-center justify-center gap-2">
               <CustomSVG
                 paths={item.icon.paths}
