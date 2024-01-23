@@ -31,19 +31,19 @@ export const Header = () => {
   return (
     <header
       className={`fixed z-20 w-full h-[70px] ${
-        scrolled ? "bg-[#00d6d4]" : "bg-transparent"
+        scrolled ? "bg-[#545454]" : "bg-transparent"
       } transition duration-300 ease-in-out`}
     >
       <div className="w-full h-full max-w-[1440px] m-auto px-10 flex relative md:px-5">
         <div className="w-full h-full flex items-center justify-between">
           <a href="https://noorlan.com">
-          <h1
-            className={`text-[30px] font-bold ${
-              !scrolled ? "text-[#00d6d4]" : "text-white"
-            } transition duration-300 ease-in-out md:text-[20px]`}
-          >
-            Dr.Noorlan
-          </h1>
+            <h1
+              className={`text-[30px] font-bold ${
+                !scrolled ? "text-[#ff5955]" : "text-white"
+              } transition duration-300 ease-in-out md:text-[20px]`}
+            >
+              Dr.Noorlan
+            </h1>
           </a>
           <div className="flex items-center gap-5 xl:hidden">
             {NAV_LINKS.slice(1, 7).map((nav, index) => (
@@ -57,15 +57,15 @@ export const Header = () => {
                 className={clsx(
                   "px-3.5 py-1.5 text-base font-normal skew-x-[-10deg] rounded-lg cursor-pointer transition",
                   {
-                    "hover:bg-white hover:text-[#00d6d4] text-white font-medium":
+                    "hover:bg-white hover:text-[#ff5955] text-white font-medium":
                       scrolled,
                   },
                   {
-                    "bg-[#eef9f9] hover:bg-[#00d6d4] hover:text-white":
+                    "bg-[#fff0f0] hover:bg-[#ff5955] hover:text-white":
                       !scrolled,
                   },
                   {
-                    "bg-white !text-[#00d6d4]": activeSection === nav.name,
+                    "bg-white !text-[#ff5955]": activeSection === nav.name,
                   }
                 )}
               >
@@ -81,9 +81,9 @@ export const Header = () => {
                 route.push("/#appointments");
               }}
               className={clsx(
-                "skew-x-[-10deg] bg-[#00d6d4] text-white font-semibold text-[16px]",
+                "skew-x-[-10deg] bg-[#ff5955] text-white font-semibold text-[16px]",
                 {
-                  "bg-white text-[#00d6d4]": scrolled,
+                  "bg-white text-[#ff5955]": scrolled,
                 }
               )}
             >
