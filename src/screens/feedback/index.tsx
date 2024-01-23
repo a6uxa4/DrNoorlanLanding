@@ -38,8 +38,11 @@ export const FeedbackPage = () => {
             ))}
           </div>
           <Marquee speed={100} loop={0} pauseOnHover={true}>
-            {FEEDBACK_DATA.map((item) => (
-              <div className="w-[500px] h-[300px] min-h-[300px] min-w-[500px] m-5 max-w-[500px] bg-white shadow-xl rounded-xl p-5 flex flex-col justify-start items-start">
+            {FEEDBACK_DATA.map((item, index) => (
+              <div
+                key={index}
+                className="w-[500px] h-[300px] min-h-[300px] min-w-[500px] m-5 max-w-[500px] bg-white shadow-xl rounded-xl p-5 flex flex-col justify-start items-start"
+              >
                 <div className="w-full flex items-center justify-start">
                   <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#ff5955] text-white">
                     {item.name.split(" ")[0].split("")[0]}
