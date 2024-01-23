@@ -16,12 +16,12 @@ export const NAV_LINKS = [
     hash: "/#works",
   },
   {
-    name: "Отзывы",
-    hash: "/#feedbacks",
-  },
-  {
     name: "О клиникe",
     hash: "/#about",
+  },
+  {
+    name: "Отзывы",
+    hash: "/#feedbacks",
   },
   {
     name: "Контакты",

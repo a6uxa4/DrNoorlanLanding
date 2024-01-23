@@ -6,6 +6,8 @@ import { Provider } from "react-redux";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "react-vertical-timeline-component/style.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import ActiveSectionContextProvider from "@/providers/ActiveSection";
 import Natification from "@/components/UI/Notification";
 import Head from "next/head";

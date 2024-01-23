@@ -9,7 +9,7 @@ export const AboutPage = () => {
     <div
       ref={ref}
       id="about"
-      className="w-full max-w-[1440px] m-auto relative isolate overflow-hidden py-24 sm:py-12"
+      className="w-full max-w-[1440px] m-auto relative isolate overflow-hidden py-24 sm:py-12 scroll-mt-28"
     >
       <div
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
