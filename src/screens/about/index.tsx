@@ -1,83 +1,49 @@
 "use client";
 
-import BannerPhoto from "../../assets/images/Banner.png";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { ABOUT } from "@/utils/constants/about.constant";
-import { AboutCard } from "@/components/about/AboutCard";
-import { ResponsiveAbout } from "@/components/about/ResponsiveAbout";
-
 export const AboutPage = () => {
-  const fadeInAnimationVariants = {
-    initial: {
-      opacity: 0,
-      y: 300,
-    },
-    animate: () => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: 0.05,
-      },
-    }),
-  };
-
-  const fadeAnimationVariants = {
-    initial: {
-      opacity: 0,
-      y: -300,
-    },
-    animate: () => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: 0.05,
-      },
-    }),
-  };
-
   return (
-    <div className="w-[100vw] bg-[#eef9f9] relative flex justify-center items-start py-10 sm:py-5 text-center">
-      <div className="w-full flex flex-col items-center justify-between gap-2 max-w-[1440px]">
-        <div className="py-5 w-full flex items-center justify-center max-w-[400px]">
-          <h1 className="text-lg font-bold font-mono lg:text-[20px] sm:text-[14px]">
-            Вам необходимо знать из чего состоит качественная услуга
-            стоматологии
-          </h1>
-        </div>
-        <div className="w-full flex justify-between items-center">
-          <div className="w-full h-full relative flex items-center justify-center max-w-[500px] xl:hidden">
-            <motion.div
-              className="w-[350px] h-[350px] rounded-full bg-gradient-to-b from-[#d7fffe] via-[#40fffc] to-[#00d6d4] shadow-xl"
-              variants={fadeInAnimationVariants}
-              initial="initial"
-              whileInView="animate"
-              viewport={{
-                once: true,
-              }}
-            ></motion.div>
-            <motion.div
-              className="w-[250px] h-[350px] absolute top-0"
-              variants={fadeAnimationVariants}
-              initial="initial"
-              whileInView="animate"
-              viewport={{
-                once: true,
-              }}
-            >
-              <Image
-                src={BannerPhoto}
-                alt="BannerPhoto"
-                className="w-[250px] h-[350px]"
-              />
-            </motion.div>
-          </div>
-          <div className="w-full flex xl:items-center xl:justify-center gap-3 xs:hidden">
-            {ABOUT.map((about) => (
-              <AboutCard key={about.id} about={about} />
-            ))}
-          </div>
-          <ResponsiveAbout />
+    <div className="w-full max-w-[1440px] m-auto relative isolate overflow-hidden py-24 sm:py-12">
+      <div
+        className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+        aria-hidden="true"
+      >
+        <div
+          className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff5955] to-[#a0abc1] opacity-20"
+          style={{
+            clipPath:
+              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+          }}
+        />
+      </div>
+      <div
+        className="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+        aria-hidden="true"
+      >
+        <div
+          className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff5955] to-[#a0abc1] opacity-20"
+          style={{
+            clipPath:
+              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+          }}
+        />
+      </div>
+      <div className="mx-auto max-w-8xl px-6 lg:px-8">
+        <div className="mx-auto max-w-[90%] lg:mx-0">
+          <h3 className="text-2xl font-bold tracking-tight text-black sm:text-6xl sm:text-[20px]">
+            Dr.Noorlan
+          </h3>
+          <p className="mt-6 text-lg leading-8 text-black-300 sm:text-[14px]">
+            Мы специализируемся в широком спектре стоматологических процедур: от
+            рутинной гигиены полости рта и лечения кариеса до сложных
+            ортодонтических коррекций и хирургических вмешательств. Наша клиника
+            оборудована передовой техникой, что позволяет нам предоставлять
+            высокоточные и безопасные процедуры.
+          </p>
+          <p className="mt-6 text-lg leading-8 text-black-300 sm:text-[14px]">
+            Dr.Noorlan - место, где улыбка станет ярче. Доверьте свое улучшение
+            здоровью и красоте нашей опытной команде, и мы с радостью сделаем
+            вашу улыбку самой лучшей версией себя!
+          </p>
         </div>
       </div>
     </div>

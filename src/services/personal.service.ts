@@ -8,9 +8,13 @@ const personalService = createApi({
     getPersonal: builder.query<any, any>({
       query: (clinicId) => `/calendars/${clinicId}/doctors`,
     }),
+    getPersonalWithAvatar: builder.query<any, any>({
+      query: (clinicId) => `users/with-avatar/${clinicId}`,
+    }),
   }),
 });
 
 export default personalService;
 
-export const { useGetPersonalQuery } = personalService;
+export const { useGetPersonalQuery, useGetPersonalWithAvatarQuery } =
+  personalService;
