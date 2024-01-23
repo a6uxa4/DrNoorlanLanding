@@ -5,7 +5,7 @@ import { useSectionInView } from "@/hooks/useSectionInView";
 import Image from "next/image";
 import { SwiperSlide, Swiper } from "swiper/react";
 import { Button } from "@nextui-org/react";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import useWindowWidth from "@/hooks/useWindowWidth";
 import { EffectFade, Navigation } from "swiper/modules";
 
@@ -16,11 +16,6 @@ export const WorkPage = () => {
   const swiperBottomRef = useRef<any>(null);
 
   const windowWidth = useWindowWidth();
-
-  const [sliderData, setSliderData] = useState({
-    topData: WORK_DATA.slice(0, 12),
-    bottomData: WORK_DATA.slice(12, 24),
-  });
 
   const goNext = () => {
     if (swiperTopRef.current) {
