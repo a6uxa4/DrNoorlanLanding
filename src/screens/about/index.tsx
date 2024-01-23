@@ -1,8 +1,16 @@
 "use client";
 
+import { useSectionInView } from "@/hooks/useSectionInView";
+
 export const AboutPage = () => {
+  const { ref } = useSectionInView("О клиникe");
+
   return (
-    <div className="w-full max-w-[1440px] m-auto relative isolate overflow-hidden py-24 sm:py-12">
+    <div
+      ref={ref}
+      id="about"
+      className="w-full max-w-[1440px] m-auto relative isolate overflow-hidden py-24 sm:py-12"
+    >
       <div
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
         aria-hidden="true"
@@ -40,9 +48,18 @@ export const AboutPage = () => {
             высокоточные и безопасные процедуры.
           </p>
           <p className="mt-6 text-lg leading-8 text-black-300 sm:text-[14px]">
+            В нашей клинике Вы сможете сделать панорамный снимок зубов на
+            новейшем оборудовании Vatech 2023 года. Что гарантирует качественный
+            снимок и дальнейшее лечение
+          </p>
+          <p className="mt-6 text-lg leading-8 text-black-300 sm:text-[14px]">
             Dr.Noorlan - место, где улыбка станет ярче. Доверьте свое улучшение
             здоровью и красоте нашей опытной команде, и мы с радостью сделаем
             вашу улыбку самой лучшей версией себя!
+          </p>
+          <p className="mt-6 text-lg leading-8 text-black-300 sm:text-[14px]">
+            Dr Noorlan - это современная стоматологическая клиника, предлагающая
+            высококачественные услуги в уютной и спокойной обстановке.
           </p>
         </div>
       </div>

@@ -20,7 +20,7 @@ export const PersonalPage = () => {
     <div
       ref={ref}
       id="personals"
-      className="w-full py-10 sm:py-5 scroll-mt-24 bg-[#fafafa]"
+      className="w-full py-10 sm:py-5 scroll-mt-24 bg-[#f6f6f6]"
     >
       <div className="py-5 w-full flex items-center justify-center">
         <h1 className="text-[30px] font-bold font-mono lg:text-[20px] sm:text-[16px]">

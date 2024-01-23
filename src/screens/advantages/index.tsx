@@ -5,7 +5,7 @@ import { ADVANTAGES } from "@/utils/constants/advantages.constant";
 
 export const AdvantagesPage = () => {
   return (
-    <div className="w-[100vw] bg-[#fafafa] relative flex flex-col justify-center items-start py-10 sm:py-5">
+    <div className="w-[100vw] bg-[#f6f6f6] relative flex flex-col justify-center items-start py-10 sm:py-5">
       <div className="py-5 w-full flex items-center justify-center">
         <h1 className="text-[30px] font-bold font-mono lg:text-[20px] sm:text-[16px]">
           Почему нас выбирают
