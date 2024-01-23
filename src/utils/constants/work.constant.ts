@@ -1,94 +1,51 @@
-import WCBTeeth1 from "../../assets/images/WCBTeeth1.jpeg";
-import WCATeeth1 from "../../assets/images/WCATeeth1.jpeg";
-import WCBTeeth2 from "../../assets/images/WCBTeeth2.jpeg";
-import WCATeeth2 from "../../assets/images/WCATeeth2.jpeg";
-
-import WWBTeeth1 from "../../assets/images/WWBTeeth1.jpeg";
-import WWATeeth1 from "../../assets/images/WWATeeth1.jpeg";
-import WWBTeeth2 from "../../assets/images/WWBTeeth2.jpeg";
-import WWATeeth2 from "../../assets/images/WWATeeth2.jpeg";
-
-import WVBTeeth1 from "../../assets/images/WVBTeeth1.jpeg";
-import WVATeeth1 from "../../assets/images/WVATeeth1.jpeg";
-import WVBTeeth2 from "../../assets/images/WVBTeeth2.jpeg";
-import WVATeeth2 from "../../assets/images/WVATeeth2.jpeg";
+import NW1Image from "../../assets/images/NW1.jpeg";
+import NW2Image from "../../assets/images/NW2.jpeg";
+import NW3Image from "../../assets/images/NW3.jpeg";
+import NW4Image from "../../assets/images/NW4.jpeg";
+import NW5Image from "../../assets/images/NW5.jpeg";
+import NW6Image from "../../assets/images/NW6.jpeg";
+import NW7Image from "../../assets/images/NW7.jpeg";
+import NW8Image from "../../assets/images/NW8.jpeg";
+import NW9Image from "../../assets/images/NW9.jpeg";
+import NW10Image from "../../assets/images/NW10.jpeg";
+import NW11Image from "../../assets/images/NW11.jpeg";
+import NW12Image from "../../assets/images/NW12.jpeg";
+import NW13Image from "../../assets/images/NW13.jpeg";
+import NW14Image from "../../assets/images/NW14.jpeg";
+import NW15Image from "../../assets/images/NW15.jpeg";
+import NW16Image from "../../assets/images/NW16.jpeg";
+import NW17Image from "../../assets/images/NW17.jpeg";
+import NW18Image from "../../assets/images/NW18.jpeg";
+import NW19Image from "../../assets/images/NW19.jpeg";
+import NW20Image from "../../assets/images/NW20.jpeg";
+import NW21Image from "../../assets/images/NW21.jpeg";
+import NW22Image from "../../assets/images/NW22.jpeg";
+import NW23Image from "../../assets/images/NW23.jpeg";
+import NW24Image from "../../assets/images/NW24.jpeg";
 
 export const WORK_DATA = [
-  {
-    id: 1,
-    name: "Чистка зубов",
-    works: [
-      {
-        beforeImage: WCBTeeth1,
-        afterImage: WCATeeth1,
-      },
-      {
-        beforeImage: WCBTeeth2,
-        afterImage: WCATeeth2,
-      },
-    ],
-  },
-  {
-    id: 2,
-    name: "Отбеливание зубов",
-    works: [
-      {
-        beforeImage: WWBTeeth1,
-        afterImage: WWATeeth1,
-      },
-      {
-        beforeImage: WWBTeeth2,
-        afterImage: WWATeeth2,
-      },
-    ],
-  },
-  {
-    id: 3,
-    name: "Виниры",
-    works: [
-      {
-        beforeImage: WVBTeeth1,
-        afterImage: WVATeeth1,
-      },
-      {
-        beforeImage: WVBTeeth2,
-        afterImage: WVATeeth2,
-      },
-    ],
-  },
-  {
-    id: 4,
-    name: "Имплантация зубов",
-    works: [],
-  },
-  {
-    id: 5,
-    name: "Лечение брекет-системой",
-    works: [],
-  },
-  {
-    id: 6,
-    name: "Лечение зубов",
-    works: [],
-  },
-  {
-    id: 7,
-    name: "Лечение кариеса",
-    works: [],
-  },
-  {
-    id: 8,
-    name: "Протезирование зубов",
-    works: [],
-  },
-  {
-    id: 9,
-    name: "Лечение дёсен",
-    works: [],
-  },
-  {
-    id: 10,
-    name: "Реставрация зубов",
-    works: [],
-  },
-] as const;
+  NW1Image,
+  NW2Image,
+  NW3Image,
+  NW4Image,
+  NW5Image,
+  NW6Image,
+  NW7Image,
+  NW8Image,
+  NW9Image,
+  NW10Image,
+  NW11Image,
+  NW12Image,
+  NW13Image,
+  NW14Image,
+  NW15Image,
+  NW16Image,
+  NW17Image,
+  NW18Image,
+  NW19Image,
+  NW20Image,
+  NW21Image,
+  NW22Image,
+  NW23Image,
+  NW24Image,
+];

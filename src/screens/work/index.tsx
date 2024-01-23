@@ -1,69 +1,139 @@
 "use client";
 
-import { WorkCard } from "@/components/work/WorkCard";
-import { WorksCard } from "@/components/work/WorksCard";
 import { WORK_DATA } from "@/utils/constants/work.constant";
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { ResponsiveWork } from "@/components/work/ResponsiveWork";
 import { useSectionInView } from "@/hooks/useSectionInView";
+import Image from "next/image";
+import { SwiperSlide, Swiper } from "swiper/react";
+import { Button } from "@nextui-org/react";
+import { useRef, useState } from "react";
+import useWindowWidth from "@/hooks/useWindowWidth";
+import { EffectFade, Navigation } from "swiper/modules";
 
 export const WorkPage = () => {
   const { ref } = useSectionInView("Примеры работ");
-  const [selectedWork, setSelectedWork] = useState(1);
 
-  const fadeInAnimationVariants = {
-    initial: {
-      opacity: 0,
-      x: -100,
-    },
-    animate: (index: number) => ({
-      opacity: 1,
-      x: 0,
-      transition: {
-        delay: 0.05 * index * 2,
-      },
-    }),
+  const swiperTopRef = useRef<any>(null);
+  const swiperBottomRef = useRef<any>(null);
+
+  const windowWidth = useWindowWidth();
+
+  const [sliderData, setSliderData] = useState({
+    topData: WORK_DATA.slice(0, 12),
+    bottomData: WORK_DATA.slice(12, 24),
+  });
+
+  const goNext = () => {
+    if (swiperTopRef.current) {
+      swiperTopRef.current.swiper.slideNext();
+    }
+    if (swiperBottomRef.current) {
+      swiperBottomRef.current.swiper.slidePrev();
+    }
+  };
+
+  const goPrev = () => {
+    if (swiperTopRef.current) {
+      swiperTopRef.current.swiper.slidePrev();
+    }
+    if (swiperBottomRef.current) {
+      swiperBottomRef.current.swiper.slideNext();
+    }
   };
 
   return (
-    <div ref={ref} id="works" className="w-full py-10 sm:py-5 scroll-mt-24 bg-[#fafafa]">
+    <div
+      ref={ref}
+      id="works"
+      className="w-full py-10 sm:py-5 scroll-mt-24 bg-[#fafafa]"
+    >
       <div className="py-5 w-full flex items-center justify-center">
         <h1 className="text-[30px] font-bold font-mono lg:text-[20px] sm:text-[16px]">
           Примеры работ
         </h1>
       </div>
-      <div className="w-full flex items-start justify-evenly gap-[100px] px-5 m-auto max-w-[1440px] sm:hidden">
-        <div className="w-full flex flex-col gap-5 max-w-fit ml-[100px] md:ml-[30px]">
-          {WORK_DATA.map((work) => (
-            <WorkCard
-              key={work.id}
-              work={work}
-              id={selectedWork}
-              onClick={setSelectedWork}
+      <div className="w-full flex items-center justify-center gap-5 flex-wrap px-5 m-auto max-w-[1440px]">
+        <Button onClick={goPrev} className="bg-[gainsboro]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M15 19L8 12L15 5"
+              stroke="#ff5955"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
-          ))}
-        </div>
-        <div className="w-full flex flex-col gap-5 md:flex-row">
-          {WORK_DATA[selectedWork - 1].works.map((works, index) => (
-            <motion.div
+          </svg>
+        </Button>
+        <Button onClick={goNext} className="bg-[gainsboro]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M9 5L16 12L9 19"
+              stroke="#ff5955"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </Button>
+        <Swiper
+          ref={swiperTopRef}
+          slidesPerView={windowWidth > 1440 ? 4 : Math.floor(windowWidth / 250)}
+          spaceBetween={20}
+          loop={true}
+          modules={[Navigation, EffectFade]}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+        >
+          {WORK_DATA.slice(0, 12).map((item, index) => (
+            <SwiperSlide
               key={index}
-              variants={fadeInAnimationVariants}
-              initial="initial"
-              whileInView="animate"
-              viewport={{
-                once: true,
-              }}
-              custom={index + 1}
-              className="max-h-[250px] md:max-h-fit"
+              className="w-[250px] h-[250px] rounded-2xl cursor-pointer"
             >
-              <WorksCard works={works} />
-            </motion.div>
+              <Image
+                className="w-[250px] h-[250px] rounded-2xl object-cover"
+                src={item}
+                alt={`${index}PhotoWork`}
+              />
+            </SwiperSlide>
           ))}
-        </div>
-      </div>
-      <div className="hidden sm:block w-full max-w-[1440px] m-auto">
-        <ResponsiveWork />
+        </Swiper>
+        <Swiper
+          ref={swiperBottomRef}
+          slidesPerView={windowWidth > 1440 ? 4 : Math.floor(windowWidth / 250)}
+          spaceBetween={20}
+          loop={true}
+          modules={[Navigation, EffectFade]}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+        >
+          {WORK_DATA.slice(12, 24).map((item, index) => (
+            <SwiperSlide
+              key={index}
+              className="w-[250px] h-[250px] rounded-2xl cursor-pointer"
+            >
+              <Image
+                className="w-[250px] h-[250px] rounded-2xl object-cover"
+                src={item}
+                alt={`${index}PhotoWork`}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );

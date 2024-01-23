@@ -1,7 +1,6 @@
 "use client";
 
 import { withLayout } from "@/Layout";
-import SwitchContact from "@/components/UI/SwitchContact/SwitchContact";
 import { AboutPage } from "@/screens/about";
 import { AboutClinicPage } from "@/screens/aboutclinic";
 import { AdvantagesPage } from "@/screens/advantages";
@@ -24,7 +23,6 @@ function Home() {
       {/* <PersonalPage /> */}
       {/* <AboutPage /> */}
       {/* <FeedbackPage /> */}
-      {/* <SwitchContact /> */}
     </>
   );
 }
