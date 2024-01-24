@@ -20,8 +20,8 @@ function Home() {
       <AboutClinicPage />
       <PersonalPage />
       <AppointmentsPage />
-      {/* <WorkPage />
-      <AboutPage />
+      <WorkPage />
+      {/* <AboutPage />
       <FeedbackPage /> */}
     </>
   );

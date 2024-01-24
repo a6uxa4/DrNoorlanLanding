@@ -35,6 +35,8 @@ export const WorkPage = () => {
     }
   };
 
+  console.log(Math.floor(windowWidth / 250));
+
   return (
     <div
       ref={ref}
@@ -81,54 +83,62 @@ export const WorkPage = () => {
             />
           </svg>
         </Button>
-        <Swiper
-          ref={swiperTopRef}
-          slidesPerView={windowWidth > 1440 ? 4 : Math.floor(windowWidth / 250)}
-          spaceBetween={20}
-          loop={true}
-          modules={[Navigation, EffectFade]}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-        >
-          {WORK_DATA.slice(0, 12).map((item, index) => (
-            <SwiperSlide
-              key={index}
-              className="w-[250px] h-[250px] rounded-2xl cursor-pointer"
-            >
-              <Image
-                className="w-[250px] h-[250px] rounded-2xl object-cover"
-                src={item}
-                alt={`${index}PhotoWork`}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <Swiper
-          ref={swiperBottomRef}
-          slidesPerView={windowWidth > 1440 ? 4 : Math.floor(windowWidth / 250)}
-          spaceBetween={20}
-          loop={true}
-          modules={[Navigation, EffectFade]}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-        >
-          {WORK_DATA.slice(12, 24).map((item, index) => (
-            <SwiperSlide
-              key={index}
-              className="w-[250px] h-[250px] rounded-2xl cursor-pointer"
-            >
-              <Image
-                className="w-[250px] h-[250px] rounded-2xl object-cover"
-                src={item}
-                alt={`${index}PhotoWork`}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div className="w-full max-w-[100vw] m-auto px-5 gap-5">
+          <Swiper
+            ref={swiperTopRef}
+            slidesPerView={
+              windowWidth > 1440 ? 4 : Math.floor(windowWidth / 250)
+            }
+            spaceBetween={20}
+            loop={true}
+            modules={[Navigation, EffectFade]}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+          >
+            {WORK_DATA.slice(0, 12).map((item, index) => (
+              <SwiperSlide
+                key={index}
+                className="w-[250px] h-[250px] rounded-2xl cursor-pointer"
+              >
+                <Image
+                  className="w-[250px] h-[250px] rounded-2xl object-cover"
+                  src={item}
+                  alt={`${index}PhotoWork`}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+        <div className="w-full max-w-[100vw] m-auto px-5 gap-5">
+          <Swiper
+            ref={swiperBottomRef}
+            slidesPerView={
+              windowWidth > 1440 ? 4 : Math.floor(windowWidth / 250)
+            }
+            spaceBetween={20}
+            loop={true}
+            modules={[Navigation, EffectFade]}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+          >
+            {WORK_DATA.slice(12, 24).map((item, index) => (
+              <SwiperSlide
+                key={index}
+                className="w-[250px] h-[250px] rounded-2xl cursor-pointer"
+              >
+                <Image
+                  className="w-[250px] h-[250px] rounded-2xl object-cover"
+                  src={item}
+                  alt={`${index}PhotoWork`}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   );
