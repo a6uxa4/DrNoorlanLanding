@@ -37,7 +37,7 @@ export const AboutPage = () => {
       </div>
       <div className="mx-auto max-w-8xl px-6 lg:px-8">
         <div className="mx-auto max-w-[90%] lg:mx-0">
-          <h3 className="text-2xl font-bold tracking-tight text-black sm:text-6xl sm:text-[20px]">
+          <h3 className="text-2xl font-bold tracking-tight text-black sm:text-[20px]">
             Dr.Noorlan
           </h3>
           <p className="mt-6 text-lg leading-8 text-black-300 sm:text-[14px]">
