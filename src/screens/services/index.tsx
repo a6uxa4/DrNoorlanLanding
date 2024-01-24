@@ -40,7 +40,7 @@ export const ServicesPage = () => {
               once: true,
             }}
             custom={item.id}
-            className="w-[200px] h-[150px] flex flex-col rounded-xl text-center cursor-pointer items-center justify-center hover:bg-[#e7e7e7] transition gap-2 xl:w-[160px] xl:h-[110px] md:w-[140px] md:h-[90px] xs:w-[130px] xs:h-[80x]"
+            className="w-[200px] h-[150px] flex flex-col rounded-xl text-center cursor-pointer items-center justify-center hover:bg-[#e7e7e7] lg:hover:bg-[white] transition gap-2 xl:w-[160px] xl:h-[110px] md:w-[140px] md:h-[90px] xs:w-[130px] xs:h-[80x]"
           >
             <Image
               src={item.icon}
