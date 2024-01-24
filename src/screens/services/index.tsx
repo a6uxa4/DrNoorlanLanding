@@ -29,7 +29,7 @@ export const ServicesPage = () => {
           Наши Услуги
         </h1>
       </div>
-      <div className="w-full grid grid-cols-6 place-items-center gap-5 place-content-center max-w-[1440px] m-auto">
+      <div className="w-full px-5 grid grid-cols-6 place-items-center gap-5 place-content-center max-w-[1440px] m-auto lg:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 xs:gap-2">
         {SERVICES_DATA.map((item) => (
           <motion.div
             key={item.id}
@@ -40,10 +40,16 @@ export const ServicesPage = () => {
               once: true,
             }}
             custom={item.id}
-            className="w-[200px] h-[150px] flex flex-col rounded-xl text-center cursor-pointer items-center justify-center hover:bg-[#e7e7e7] transition gap-2"
+            className="w-[200px] h-[150px] flex flex-col rounded-xl text-center cursor-pointer items-center justify-center hover:bg-[#e7e7e7] transition gap-2 xl:w-[160px] xl:h-[110px] md:w-[140px] md:h-[90px] xs:w-[130px] xs:h-[80x]"
           >
-            <Image src={item.icon} alt="icon" />
-            <h1>{item.name}</h1>
+            <Image
+              src={item.icon}
+              alt="icon"
+              className="xl:w-[60px] md:w-[40px] xs:w-[35px]"
+            />
+            <h1 className="md:text-[14px] sm:text-[12px] xs:text-[10px]">
+              {item.name}
+            </h1>
           </motion.div>
         ))}
       </div>

@@ -97,20 +97,20 @@ export const Header = () => {
             whileTap={{ scale: 0.9 }}
           >
             <div
-              className={clsx("w-full h-1 md:h-[3px] bg-[#00d6d4] rounded", {
-                "rotate-45 absolute !bg-[#00d6d4]": isOpen,
+              className={clsx("w-full h-1 md:h-[3px] bg-[#ff5955] rounded", {
+                "rotate-45 absolute !bg-[#ff5955]": isOpen,
                 "bg-white": scrolled,
               })}
             />
             <div
-              className={clsx("w-full h-1 md:h-[3px] bg-[#00d6d4] rounded", {
+              className={clsx("w-full h-1 md:h-[3px] bg-[#ff5955] rounded", {
                 hidden: isOpen,
                 "bg-white": scrolled,
               })}
             />
             <div
-              className={clsx("w-full h-1 md:h-[3px] bg-[#00d6d4] rounded", {
-                "rotate-[-45deg] absolute !bg-[#00d6d4]": isOpen,
+              className={clsx("w-full h-1 md:h-[3px] bg-[#ff5955] rounded", {
+                "rotate-[-45deg] absolute !bg-[#ff5955]": isOpen,
                 "bg-white": scrolled,
               })}
             />
@@ -133,7 +133,7 @@ export const Header = () => {
               route.push("#appointments");
             }}
             className={clsx(
-              "skew-x-[-10deg] bg-[#00d6d4] text-white font-semibold text-[16px]"
+              "skew-x-[-10deg] bg-[#ff5955] text-white font-semibold text-[16px]"
             )}
           >
             Записаться на прием
@@ -154,7 +154,7 @@ export const Header = () => {
                 setIsOpen(false);
               }}
               className={clsx(
-                "px-3.5 py-1.5 text-base font-normal rounded-lg cursor-pointer transition-all bg-[#eef9f9] active:bg-[#00d6d4] active:text-white"
+                "px-3.5 py-1.5 text-base font-normal rounded-lg cursor-pointer transition-all bg-[#fef0ef] active:bg-[#ff5955] active:text-white"
               )}
             >
               {nav.name}
