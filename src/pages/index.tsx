@@ -21,8 +21,8 @@ function Home() {
       <PersonalPage />
       <AppointmentsPage />
       <WorkPage />
-      {/* <AboutPage />
-      <FeedbackPage /> */}
+      <AboutPage />
+      {/* <FeedbackPage /> */}
     </>
   );
 }

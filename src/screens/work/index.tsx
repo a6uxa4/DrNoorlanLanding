@@ -81,7 +81,7 @@ export const WorkPage = () => {
             />
           </svg>
         </Button>
-        <div className="w-full max-w-[90vw] m-auto px-5 gap-5">
+        <div className="w-full max-w-[90vw] m-auto px-5 gap">
           <Swiper
             ref={swiperTopRef}
             slidesPerView={
@@ -98,7 +98,7 @@ export const WorkPage = () => {
             {WORK_DATA.slice(0, 12).map((item, index) => (
               <SwiperSlide
                 key={index}
-                className="w-[250px] h-[250px] xs:w-[200px] xs:h-[200px] rounded-2xl cursor-pointer bg-red-200"
+                className="w-[250px] h-[250px] xs:w-[200px] xs:h-[200px] rounded-2xl cursor-pointer"
               >
                 <Image
                   className="w-full h-full rounded-2xl object-cover"
