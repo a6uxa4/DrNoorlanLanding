@@ -19,8 +19,8 @@ function Home() {
       <AdvantagesPage />
       <AboutClinicPage />
       <PersonalPage />
-      {/* <AppointmentsPage />
-      <WorkPage />
+      <AppointmentsPage />
+      {/* <WorkPage />
       <AboutPage />
       <FeedbackPage /> */}
     </>

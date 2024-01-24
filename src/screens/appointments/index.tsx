@@ -92,7 +92,7 @@ export const AppointmentsPage = () => {
           </h1>
         </div>
         <div className="w-full flex items-center justify-around">
-          <div className="w-[35%] h-full flex flex-col gap-5">
+          <div className="w-[35%] h-full flex flex-col gap-5 md:hidden">
             <div className="w-full flex gap-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -203,15 +203,15 @@ export const AppointmentsPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-fit p-5 rounded-tl-[250px] rounded-tr-[120px] rounded-bl-[200px] rounded-br-[200px] bg-[gainsboro]">
+          <div className="w-fit p-5 rounded-tl-[250px] rounded-tr-[120px] rounded-bl-[200px] rounded-br-[200px] bg-[gainsboro] sm:p-3">
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className="w-fit px-10 py-5 rounded-tl-[100px] rounded-tr-[250px] rounded-bl-[100px] rounded-br-[150px] bg-[#545454] flex flex-col items-center gap-2 transform-[10%]"
+              className="w-fit px-10 py-5 rounded-tl-[100px] rounded-tr-[250px] rounded-bl-[100px] rounded-br-[150px] bg-[#545454] flex flex-col items-center gap-2 transform-[10%] sm:py-3"
             >
               <div className="relative">
                 <Input
                   isRequired
-                  className="max-w-xs min-w-[320px]"
+                  className="max-w-xs min-w-[320px] sm:min-w-[300px]"
                   type="string"
                   label="Имя"
                   placeholder="Введите имя"
@@ -226,7 +226,7 @@ export const AppointmentsPage = () => {
               <div className="relative">
                 <Input
                   isRequired
-                  className="max-w-xs min-w-[320px]"
+                  className="max-w-xs min-w-[320px] sm:min-w-[300px]"
                   type="string"
                   label="Фамилия"
                   placeholder="Введите фамилию"
@@ -241,7 +241,7 @@ export const AppointmentsPage = () => {
               <div className="relative">
                 <Input
                   isRequired
-                  className="max-w-xs min-w-[320px]"
+                  className="max-w-xs min-w-[320px] sm:min-w-[300px]"
                   type="string"
                   label="Номер телефона"
                   defaultValue="+996"
@@ -267,7 +267,7 @@ export const AppointmentsPage = () => {
                   label="Доктор"
                   placeholder="Выберите доктора"
                   isRequired
-                  className="max-w-xs min-w-[320px]"
+                  className="max-w-xs min-w-[320px] sm:min-w-[300px]"
                   {...register("userId", {
                     required: "Выберите доктора !",
                   })}
@@ -287,7 +287,7 @@ export const AppointmentsPage = () => {
                   label="Тип лечение"
                   placeholder="Выберите лечение"
                   isRequired
-                  className="max-w-xs min-w-[320px]"
+                  className="max-w-xs min-w-[320px] sm:min-w-[300px]"
                   {...register("recordType", {
                     required: "Выберите тип записи !",
                   })}
