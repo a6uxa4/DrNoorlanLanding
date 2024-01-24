@@ -35,8 +35,6 @@ export const WorkPage = () => {
     }
   };
 
-  console.log(Math.floor(windowWidth / 250));
-
   return (
     <div
       ref={ref}
@@ -83,7 +81,7 @@ export const WorkPage = () => {
             />
           </svg>
         </Button>
-        <div className="w-full max-w-[100vw] m-auto px-5 gap-5">
+        <div className="w-full max-w-[90vw] m-auto px-5 gap-5">
           <Swiper
             ref={swiperTopRef}
             slidesPerView={
@@ -100,10 +98,10 @@ export const WorkPage = () => {
             {WORK_DATA.slice(0, 12).map((item, index) => (
               <SwiperSlide
                 key={index}
-                className="w-[250px] h-[250px] rounded-2xl cursor-pointer"
+                className="w-[250px] h-[250px] xs:w-[200px] xs:h-[200px] rounded-2xl cursor-pointer bg-red-200"
               >
                 <Image
-                  className="w-[250px] h-[250px] rounded-2xl object-cover"
+                  className="w-full h-full rounded-2xl object-cover"
                   src={item}
                   alt={`${index}PhotoWork`}
                 />
@@ -111,7 +109,7 @@ export const WorkPage = () => {
             ))}
           </Swiper>
         </div>
-        <div className="w-full max-w-[100vw] m-auto px-5 gap-5">
+        <div className="w-full max-w-[90vw] m-auto px-5 gap-5">
           <Swiper
             ref={swiperBottomRef}
             slidesPerView={
@@ -128,10 +126,10 @@ export const WorkPage = () => {
             {WORK_DATA.slice(12, 24).map((item, index) => (
               <SwiperSlide
                 key={index}
-                className="w-[250px] h-[250px] rounded-2xl cursor-pointer"
+                className="w-[250px] h-[250px] xs:w-[200px] xs:h-[200px] rounded-2xl cursor-pointer"
               >
                 <Image
-                  className="w-[250px] h-[250px] rounded-2xl object-cover"
+                  className="w-full h-full rounded-2xl object-cover"
                   src={item}
                   alt={`${index}PhotoWork`}
                 />
