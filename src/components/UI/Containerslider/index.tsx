@@ -36,7 +36,7 @@ export default function ContainerSlider({
     <div className="w-full flex flex-col gap-3 px-5 relative">
       <div
         onClick={goPrev}
-        style={{ backgroundColor: canSlidePrev ? "#00d6d4" : "gainsboro" }}
+        style={{ backgroundColor: canSlidePrev ? "#ff5955" : "gainsboro" }}
         className={clsx(
           "p-1.5 cursor-pointer text-white rounded-lg absolute left-2 z-10 top-[150px]",
           {
@@ -48,7 +48,7 @@ export default function ContainerSlider({
       </div>
       <div
         onClick={goNext}
-        style={{ backgroundColor: canSlideNext ? "#00d6d4" : "gainsboro" }}
+        style={{ backgroundColor: canSlideNext ? "#ff5955" : "gainsboro" }}
         className={clsx(
           "p-1.5 cursor-pointer text-white rounded-lg absolute right-2 z-10 top-[150px]",
           {
