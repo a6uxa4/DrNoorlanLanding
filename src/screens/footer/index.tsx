@@ -20,7 +20,7 @@ export const Footer = () => {
           onClick={() =>
             (window.location.href = `https://dentapp.online/prices`)
           }
-          className="text-[16px] flex items-center font-medium text-barber-color title-font cursor-pointer"
+          className="text-[16px] flex items-center font-medium text-barber-color title-font cursor-pointer xs:text-[12px]"
         >
           Сайт интегрирован с DentApp
           <br />
