@@ -15,7 +15,7 @@ const Rating = ({ rating }: IProps) => {
       {[1, 2, 3, 4, 5].map((item: number) => (
         <div key={item} onClick={() => handleStarClick(item)}>
           <svg
-            className={clsx("w-4 h-4 cursor-pointer", {
+            className={clsx("w-4 h-4 cursor-pointer md:w-2 md:h-2", {
               "text-yellow-300": item <= (rating || selectedRating),
               "text-[#eae9e9]": item > (rating || selectedRating),
             })}
